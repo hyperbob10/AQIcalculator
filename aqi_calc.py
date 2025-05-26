@@ -22,3 +22,14 @@ prediction_result= m1.predict([[1, 10, 5, 11, 10, 5]])
 print(prediction_result)
 
 
+# defining model
+m2 = AdaBoostRegressor()
+
+# Fitting the model
+m2.fit(train1, target)
+
+m2.score(train1, target)*100
+
+# predicting the model with other values (testing the data)
+# so AQI is 48.73051389
+print(m2.predict([[1, 45, 67, 34, 5, 23]]))
